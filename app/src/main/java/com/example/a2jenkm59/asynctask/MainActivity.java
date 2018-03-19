@@ -66,13 +66,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        Button go = (Button)findViewById(R.id.btn1);
+    setContentView(R.layout.activity_main);
+    Button go = (Button)findViewById(R.id.btn1);
         go.setOnClickListener(this);
-    }
+}
 
-    public void onClick(View v)
-    {
+    public void onClick(View v) {
         String artist;
         EditText et = (EditText)findViewById(R.id.et1);
         artist = et.getText().toString();
